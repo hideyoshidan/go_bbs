@@ -10,6 +10,10 @@
   - POSTGRES_INITDB_ARGS:encodingとlocaleの設定  
     https://oki2a24.com/2020/02/23/set-no-locale-to-docker-compose-postgresql/
 
+### migrate
+  - golang-migrate  
+    https://dev.classmethod.jp/articles/db-migrate-with-golang-migrate/
+  
 ## 使用パッケージ
   - GIN  
     github.com/gin-gonic/gin
