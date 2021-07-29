@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  # Go
+  go-bbs-app:
+    container_name: 'go_bbs_app'
+    build: 
+      context: .
+      dockerfile: go_bbs_app/dockerfile
+    tty: true
+    env_file:
+      - go_bbs_app/go_setting.env
+    volumes:
+      - ./go_bbs_src:/var/www/go_bbs
+    ports: 
+      - 8080:8080
+    links: 
+      - go-bbs-postgres
+  
+  # PostgreSQL
+  # - POSTGRES_INITDB_ARGS:encodingとlocaleの設定
+  #   https://oki2a24.com/2020/02/23/set-no-locale-to-docker-compose-postgresql/
+  go-bbs-postgres:
+    image: postgres:latest
+    container_name: go_bbs_postgres
+    tty: true
+    ports: 
+      - 15432:5432
+    environment: 
+      POSTGRES_USER: go_bbs_user
+      POSTGRES_PASSWORD: go_bbs_pw
+      POSTGRES_DB: go_bbs
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8 --locale=C"
+      TZ: 'Asia/Tokyo'
+    volumes:
+      - ./go_bbs_postgres/data:/var/lib/postgresql/data
+      - ./go_bbs_postgres/log:/var/log
