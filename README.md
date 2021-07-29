@@ -33,3 +33,8 @@ $ go get github.com/jinzhu/gorm
 $ go get github.com/joho/godotenv
 $ go mod tidy
 ```
+## メモ
+  - GOPATH
+```
+GOPATH=$HOME/go
+```
