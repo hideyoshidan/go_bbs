@@ -1,4 +1,4 @@
-## 参照サイト
+## 1. 参照サイト
 ### Go関連
   - godotenvについて  
     https://www.st-hakky-blog.com/entry/2020/06/11/100000
@@ -14,7 +14,7 @@
   - golang-migrate  
     https://dev.classmethod.jp/articles/db-migrate-with-golang-migrate/
   
-## 使用パッケージ
+## 2. 初期使用パッケージ
   - GIN  
     github.com/gin-gonic/gin
   - PostgreSQL Driver  
@@ -24,7 +24,7 @@
   - godotenv  
     github.com/joho/godotenv
 
-## 初期設定 & 初期パッケージinstall
+## 3. 初期設定 & 初期パッケージinstall
 ```
 $ go mod init github.com/hideyoshidan/go_bbs
 $ go get github.com/gin-gonic/gin
@@ -33,7 +33,10 @@ $ go get github.com/jinzhu/gorm
 $ go get github.com/joho/godotenv
 $ go mod tidy
 ```
-## メモ
+
+## 4. 初期構築手順
+
+## 5. メモ
   - GOPATH
 ```
 GOPATH=$HOME/go
