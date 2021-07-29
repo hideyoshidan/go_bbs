@@ -22,10 +22,10 @@
 
 ## 初期設定 & 初期パッケージinstall
 ```
-go mod init github.com/hideyoshidan/go_bbs
-go get github.com/gin-gonic/gin
-go get github.com/lib/pq
-go get github.com/jinzhu/gorm
-go get github.com/joho/godotenv
-go mod tidy
+$ go mod init github.com/hideyoshidan/go_bbs
+$ go get github.com/gin-gonic/gin
+$ go get github.com/lib/pq
+$ go get github.com/jinzhu/gorm
+$ go get github.com/joho/godotenv
+$ go mod tidy
 ```
