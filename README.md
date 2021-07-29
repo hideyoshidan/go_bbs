@@ -10,8 +10,12 @@
   - POSTGRES_INITDB_ARGS:encodingとlocaleの設定
     https://oki2a24.com/2020/02/23/set-no-locale-to-docker-compose-postgresql/
 
-## 使用Modules
-  - go mod init github.com/hideyoshidan/go_bbs
-  - go get github.com/gin-gonic/gin
-  - go get github.com/lib/pq
-  - go get github.com/jinzhu/gorm
+## 使用パッケージ
+  - GIN
+    go get github.com/gin-gonic/gin
+  - PostgreSQL Driver
+    github.com/lib/pq
+  - Gorm
+    github.com/jinzhu/gorm
+  - godotenv
+    github.com/joho/godotenv
