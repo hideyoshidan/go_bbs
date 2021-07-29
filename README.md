@@ -12,12 +12,18 @@
 
 ## 使用パッケージ
   - GIN  
-```
-    go get github.com/gin-gonic/gin
-```
-  - PostgreSQL Driver
+    github.com/gin-gonic/gin
+  - PostgreSQL Driver  
     github.com/lib/pq
-  - Gorm
+  - Gorm  
     github.com/jinzhu/gorm
-  - godotenv
+  - godotenv  
     github.com/joho/godotenv
+
+## 初期設定 & 初期パッケージinstall
+```
+go mod init github.com/hideyoshidan/go_bbs
+go get github.com/gin-gonic/gin
+go get github.com/lib/pq
+go get github.com/jinzhu/gorm
+```
